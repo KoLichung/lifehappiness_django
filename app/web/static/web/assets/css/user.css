@@ -1,0 +1,131 @@
+/* -------------------------------------------------------------------------- */
+/*                                chijia Button                               */
+/* -------------------------------------------------------------------------- */
+/* prettier-ignore */
+/*# sourceMappingURL=user.css.map */
+
+
+body{
+  background-color: white;
+}
+
+.nav-link{
+  color: #FF9224;
+  font-family: 'Noto Sans CJK TC';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.nav-link:hover{
+  color: #aa5908;
+}
+
+.board-title{
+  font-family: 'Noto Sans CJK TC';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  color: #F5654A;
+  text-align: center;
+  margin: 1rem 0 1rem 0;
+}
+
+.buy-button{
+  background-color: #FFD601;
+  width: 150px;
+  color: #59430A;
+  font-size: 16pt;
+  font-family: 'Noto Sans CJK TC';
+  font-weight: 700;
+  padding: 4px 16px;
+  margin: 1rem 0 1rem 0;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.buy-button:hover{
+  background-color: #59430A;
+  width: 150px;
+  color: #FFD601;
+  font-size: 16pt;
+  font-family: 'Noto Sans CJK TC';
+  font-weight: 700;
+  padding: 4px 16px;
+  margin: 1rem 0 1rem 0;
+  border-radius: 30px;
+  text-align: center;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.feature-text{
+  font-family: 'Noto Sans CJK TC';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #666564;
+}
+
+h2{
+  font-family: 'Noto Sans CJK TC';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #FF9224;
+}
+
+h4{
+  font-family: 'Noto Sans CJK TC';
+  font-style: normal;
+  font-weight: 700;
+  color: #FF9224;
+}
+
+.footer-title{
+  font-family: 'Noto Sans CJK TC';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #666564;
+}
+
+.footer-text{
+  font-family: 'Noto Sans CJK TC';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #666564;
+}
+
+ul{
+  list-style-type:none;
+  padding:0px;
+  margin:0px;
+}
+
+.txt-indent li{
+  text-indent: -1em;
+}
+
+ul li a{
+  list-style:none;
+}
+
+p, li, li a{
+  color: #666564;
+}
+
+a:hover{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.url-text{
+ color: rgb(67, 121, 222);
+ font-weight: 700;
+}

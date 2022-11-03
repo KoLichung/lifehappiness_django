@@ -1,0 +1,104 @@
+{% extends 'web/base.html' %} {% block content %}
+{% load static %}
+
+<!-- content -->
+<div class="container" style="max-width: 800px">
+  <div class="mt-4">
+    <img src="{% static 'web/assets/img/index_front.png' %}" alt="" class="img-fluid mx-auto d-block" />
+  </div>
+
+  <div class="board-title">—經典砧板組—</div>
+  <div class="mt-4">
+    <a href="{% url 'cuttingboard' %}" >
+      <img src="{% static 'web/assets/img/index_chopping_board.jpg' %}" alt="" class="img-fluid mx-auto d-block"/>
+    </a>
+  </div>
+
+  <!-- features -->
+  <div class="row mt-3 mb-5">
+
+    <div class="col-7 col-sm-4 mx-auto mt-3">
+      <div class="text-center">
+        <img src="{% static 'web/assets/img/feature_2year.png' %}" alt="" style="max-width: 80px;">
+      </div>
+      <div class="feature-text">
+        質地高密度、水分不易滲透，切火龍果不染色，再獨家給你兩年不發霉保固！
+      </div>
+    </div>
+
+    <div class="col-7 col-sm-4 mx-auto mt-3">
+      <div class="text-center">
+        <img src="{% static 'web/assets/img/feature_anti_bacteria.png' %}" alt="" style="max-width: 80px;">
+      </div>
+      <div class="feature-text">
+        通過 FDA 、SGS、台美檢驗，抗菌率99%
+        ，金黃葡萄球菌、大腸桿菌難以附著。(生熟食請分開)
+      </div>
+    </div>
+
+    <div class="col-7 col-sm-4 mx-auto mt-3">
+      <div class="text-center">
+        <img src="{% static 'web/assets/img/feature_170c.png' %}" alt="" style="max-width: 80px;">
+      </div>
+      <div class="feature-text">耐熱達170度，進洗碗機、熱水洗沒問題！</div>
+    </div>
+
+  </div>
+
+  <div class="mt-4 mb-6 text-center">
+    <a class="buy-button mx-auto" href="https://market.icook.tw/products/lifehappiness" target="_blank">立刻選購</a>
+  </div>
+
+  <!-- pizza & bread board -->
+  <div class="row">
+    <div class="col-6 justify-content-center">
+      <div class="board-title">—比薩圓板—</div>
+      <a href="{% url 'pizzaboard' %}">
+        <img src="{% static 'web/assets/img/index_pizza.png' %}" alt="" class="img-fluid mx-auto d-block"/>
+      </a>
+      <div class="my-4 text-center">
+        <a class="buy-button mx-auto" href="https://market.icook.tw/products/lifehappiness" target="_blank">立刻選購</a>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="board-title">—麵包板—</div>
+      <a href="{% url 'breadboard' %}">
+        <img src="{% static 'web/assets/img/index_bread.jpg' %}" alt="" class="img-fluid mx-auto d-block"/>
+      </a>
+      <div class="my-4 text-center">
+        <a class="buy-button mx-auto" href="https://market.icook.tw/products/lifehappiness" target="_blank">立刻選購</a>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+  <!-- Testimonial -->
+  <div class="text-center mt-5 mb-7">
+    <h2 >砧板好用見證 👍👍</h2>
+    <!-- <span style="font-size: 14pt">點圖閱讀完整文章</span> -->
+    <div class="justify-content-center">
+      <div class="swiper-container theme-slider mb-2" data-swiper='{"autoplay":true,"spaceBetween":8,"loop":true,"loopedSlides":4,"slideToClickedSlide":true}'>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="{% static 'web/assets/img/testimonial_01.png' %}" alt="" class="img-fluid"/>
+          </div>
+          <div class="swiper-slide">
+            <img src="{% static 'web/assets/img/testimonial_02.png' %}" alt="" class="img-fluid" />
+          </div>
+          <div class="swiper-slide">
+            <img src="{% static 'web/assets/img/testimonial_03.png' %}" alt="" class="img-fluid"/>
+          </div>
+          <div class="swiper-slide">
+            <img src="{% static 'web/assets/img/testimonial_04.png' %}" alt="" class="img-fluid"/>
+          </div>
+        </div>
+        <div class="swiper-nav">
+          <div class="swiper-button-next swiper-button-white"></div>
+          <div class="swiper-button-prev swiper-button-white"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

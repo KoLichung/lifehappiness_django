@@ -1,0 +1,24 @@
+{% extends 'web/base.html' %} {% block content %}
+{% load static %}
+
+<!-- content -->
+<div class="container-fluid mt-4" style="max-width: 800px">
+  <div class="mt-2">
+    <img src="{% static 'web/assets/img/product_pizza.jpg' %}" alt="" class="img-fluid">
+  </div>
+
+  <div class="text-center mt-2">
+    <h2>SGS、台美科技檢驗</h2>
+  </div>
+  <div class="my-2">
+    <img src="{% static 'web/assets/img/test_report.jpg' %}" alt="" class="img-fluid">
+  </div>
+  <div class="my-2">
+    <img src="{% static 'web/assets/img/before_purchase.png' %}" alt="" class="img-fluid">
+  </div>
+  <div class="text-center my-6">
+    <a href="https://market.icook.tw/products/lifehappiness" class="buy-button" target="_blank">立刻選購</a>
+  </div>
+</div>
+    
+{% endblock %}

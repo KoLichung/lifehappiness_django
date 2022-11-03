@@ -1,0 +1,105 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zh-hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="【不發霉！超抗菌木纖維砧板】是媽媽的聰明選擇！獨家給您兩年不發霉保固，通過美國SGS以及台美科技檢驗，金黃葡萄球菌、大腸桿菌難以附著。水分不滲透，切火龍果不染色！耐熱達170度，洗碗機、熱水洗沒問題！"/>
+
+    <title>品幸福｜陪您打造幸福廚房</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'web/assets/img/favicon-32x32.png' %}"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'web/assets/img/favicon-16x16.png' %}"/>
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'web/assets/img/favicon.png' %}"/>
+    <!-- css -->
+    <link rel="stylesheet" href="{% static 'web/vendors/swiper/swiper-bundle.min.css' %}" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700%7cPoppins:300,400,500,600,700,800,900&amp;display=swap" rel="stylesheet"/>
+    <link href="{% static 'web/vendors/overlayscrollbars/OverlayScrollbars.min.css' %}" rel="stylesheet"/>
+    <link href="{% static 'web/assets/css/theme.min.css' %}" rel="stylesheet" id="style-default"/>
+    <link href="{% static 'web/assets/css/user.css' %}" rel="stylesheet" id="user-style-default"/>
+  </head>
+  <body>
+    <!-- nav bar -->
+    <nav>
+      <div class="container text-center mt-5 mb-3">
+        <a href="{% url 'index' %}" class="navbar-brand">
+          <img src="{% static 'web/assets/img/logo_320x120.png' %}" alt="" height="60" />
+        </a>
+      </div>
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'cuttingboard' %}">超抗菌木纖維砧板</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'breadboard' %}">超抗菌木纖維麵包板</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'pizzaboard' %}">超抗菌木纖維比薩板</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- content -->
+    {% block content %}{% endblock %}
+
+    <!-- footer -->
+    <footer>
+      <div class="container" style="max-width: 800px">
+        <hr>
+        <div class="row justify-content-around px-3">
+
+          <div class="col-12 col-sm-4 ">
+            <div class="footer-title">關於品幸福</div>
+            <p class="footer-text">品幸福是我們對自己的期許，也是對消費者的承諾，我們經營廚房相關產品，並且努力為商品品質把關，期待與您一起打造幸福廚房！</p>
+          </div>
+
+          <div class="col-4 col-sm-2">
+            <div class="footer-title">購物須知</div>
+            <ul class="footer-text">
+              <li> 
+                <a href="{% url 'terms' %}">購物說明</a>
+              </li>
+              <li>
+                <a href="{% url 'faq' %}">砧板常見問題</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-4 col-sm-2">
+            <div class="footer-title">客服聯繫</div>
+            <ul class="footer-text">
+              <li><b>週一至週五</b><br>09:00～16:00</li>
+              <li><b>LINE 客服</b> @bhu5503e</li>
+            </ul>
+          </div>
+
+          <div class="col-4 col-sm-3">
+            <div class="footer-title">業務合作</div>
+            <ul class="footer-text">
+              <li>jason@kosbrother.com</li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-center my-5">
+          <p class="footer-text">Copyright © 2022 品幸福 All Rights Reserved.</p>
+        </div>
+      </div>
+      </div>
+    </footer>
+
+    <!-- JavaScripts -->
+    <script src="{% static 'web/vendors/popper/popper.min.js' %}"></script>
+    <script src="{% static 'web/vendors/bootstrap/bootstrap.min.js' %}"></script>
+    <script src="{% static 'web/vendors/anchorjs/anchor.min.js' %}"></script>
+    <script src="{% static 'web/vendors/is/is.min.js' %}"></script>
+    <script src="{% static 'web/vendors/swiper/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'web/vendors/typed.js/typed.js' %}"></script>
+    <script src="{% static 'web/vendors/fontawesome/all.min.js' %}"></script>
+    <script src="{% static 'web/vendors/lodash/lodash.min.js' %}"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+    <script src="{% static 'web/vendors/list.js/list.min.js' %}"></script>
+    <script src="{% static 'web/assets/js/theme.js' %}"></script>
+  </body>
+</html>
