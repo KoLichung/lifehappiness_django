@@ -29,6 +29,7 @@ ALLOWED_HOSTS = [
     '127.0.0.1',
     'localhost',
     'lifehappinesstw.com',
+    'www.lifehappinesstw.com',
 ]
 
 ADMINS = (
